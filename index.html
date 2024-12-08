@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Contatos</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <img src="./img/icons8-contact-details-48.png" alt="icone-pessoa">
+      <h1>Contatos</h1>
+    </header>
+    
+    <main>
+
+      <form id="form">
+        <label for="contato">Adicionar contato:</label>
+        <input type="text" required placeholder="Nome do contato" id="contato">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" required placeholder="Número do contato" id="telefone">
+        <button type="submit">Adicionar +</button>
+      </form>
+
+      <table cellspacing="0">
+        
+        <thead>
+          <tr>
+            <th>Nome:</th>
+            <th>Telefone:</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>- - -</td>
+            <td>(- -)- - - - - - - - - -</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Número de contatos</td>
+            <td id="somarContatos"># 0</td>
+          </tr>
+        </tfoot>
+      </table>
+
+    </main>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
